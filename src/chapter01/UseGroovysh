@@ -1,0 +1,18 @@
+zhengjuns-MacBook-Pro:TheGroovyProgrammingLanguage zhengjun$ groovysh
+Groovy Shell (2.4.11, JVM: 1.8.0_131)
+Type ':help' or ':h' for help.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+groovy:000> Math.sqrt(16)
+===> 4.0
+groovy:000> println 'Test drive Groovy'
+Test drive Groovy
+===> null
+groovy:000> String.metaClass.isPalindrome = {
+groovy:001>  delegate == delegate.reverse()
+groovy:002> }
+===> groovysh_evaluate$_run_closure1@78d6692f
+groovy:000> "mom".isPalindrome()
+===> true
+groovy:000> 'mom'.l
+lastIndexOf(   length()
+groovy:000> 'mom'.t
