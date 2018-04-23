@@ -26,3 +26,5 @@ class ComplexNumber {
 }
 c1 = new ComplexNumber(real: 1,imaginary: 2)
 c2 = new ComplexNumber(real: 4,imaginary: 1)
+
+println c1.plus(c2) //   5 + 3i
