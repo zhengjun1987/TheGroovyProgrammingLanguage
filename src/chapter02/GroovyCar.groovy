@@ -10,11 +10,11 @@ class GCar {
 }
 
 def car = new GCar(2008)
-println "Year:$car.getYear()"
-println "Miles:$car.getMiles()"
+println "Year:$car.year"
+println "Miles:$car.miles"
 println "Setting miles:"
 car.miles = 2500
-println "Miles:$car.getMiles()"
+println "Miles:${car.getMiles()}"
 //        zhengjuns-MacBook-Pro:chapter02 zhengjun$ groovy GroovyCar
 //        Year:2008
 //        Miles:0

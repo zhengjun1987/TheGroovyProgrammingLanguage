@@ -1,5 +1,3 @@
-package chapter02
-
 enum Methodologies {
     Evo(5),
     XP(21),

@@ -25,3 +25,8 @@ orderCoffe(CoffeeSize.MUG)
 //        Coffee order received for size SMALL ：You are health conscious!
 //        Coffee order received for size LARGE ：You gotta be a programmer!
 //        Coffee order received for size MUG ：You should try caffeine IV!
+
+print "Available sizes are:"
+for (size in CoffeeSize.values())
+    print("$size ")
+//        Available sizes are:SHORT SMALL MEDIUM LARGE MUG
