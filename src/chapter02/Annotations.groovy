@@ -1,3 +1,5 @@
+package chapter02
+
 import groovy.transform.Canonical
 import groovy.transform.Immutable
 
@@ -118,13 +120,9 @@ fluentCreate()
 //        Person(John)
 //        CreditCard(1234-5678-9012-3456, 20000)
 
-@Singleton(lazy = true, strict = false)
+@Singleton(lazy = true)
 class TheUnique {
-    private TheUnique() {
-        println("Instance created")
-    }
-
-    def hello() {
+    static def hello() {
         println("hello")
     }
 }
