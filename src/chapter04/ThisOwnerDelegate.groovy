@@ -11,6 +11,10 @@ static def examinateClosure(closure) {
     closure()
 }
 
+println "this = $this"
+
+println "{this.declaredFields} = ${this.declaredFields}"
+
 examinateClosure({
     println "outer it = $it"
     println("In first closure：")
