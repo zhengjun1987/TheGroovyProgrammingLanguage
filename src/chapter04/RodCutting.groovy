@@ -28,7 +28,7 @@ class RevenueDetails {
 
 def cutRod
 
-cutRod = {int[] prices, length ->
+cutRod = { int[] prices, length ->
     if (length == 0)
         return new RevenueDetails(revenue: 0, splits: [])
     else {
@@ -43,7 +43,7 @@ cutRod = {int[] prices, length ->
     }
 }.memoize()
 
-timeIt(desiredLength){length -> cutRod(rodPrices,length)}
+timeIt(desiredLength) { length -> cutRod(rodPrices, length) }
 //        rodPrices[desiredLength] = 38
 //        Max revenue for 27 is chapter04.RevenueDetails(43, [5, 5, 5, 5, 5, 2])
 //        Disconnected from the target VM, address: '127.0.0.1:57795', transport: 'socket'
