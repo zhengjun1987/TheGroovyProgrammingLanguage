@@ -14,3 +14,5 @@ println "{lst.find(){ it == 2 }} = ${lst.find() { it == 2 }}"   //{lst.find(){ i
 
 println "{lst.findAll() { it == 2 }} = ${lst.findAll() { it == 2 }}"    //{lst.findAll() { it == 2 }} = [2, 2]
 println "{lst.findAll() { it > 4 }} = ${lst.findAll() { it > 4 }}"      //{lst.findAll() { it > 4 }} = [8, 9, 6]
+
+println "{lst.findAll(){ it == 9 }} = ${lst.findAll() { it == 9 }}"     //{lst.findAll(){ it == 9 }} = [9]
