@@ -1,3 +1,4 @@
+package chapter06
 /**
  * Author: Zheng Jun
  * Mail:zhengjun1987@outlook.com
