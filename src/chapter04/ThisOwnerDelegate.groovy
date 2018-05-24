@@ -7,13 +7,11 @@ package chapter04
  *   Project:TheGroovyProgrammingLanguage
  */
 
-static def examinateClosure(closure) {
+def examinateClosure(closure) {
     closure()
 }
 
 println "this = $this"
-
-println "{this.declaredFields} = ${this.declaredFields}"
 
 examinateClosure({
     println "outer it = $it"

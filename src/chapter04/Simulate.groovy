@@ -14,14 +14,14 @@ class Equipment {
         this.calculator = calculator
     }
 
-    def simulate(){
+    def simulate() {
         println "Equipment.simulate"
         calculator()
     }
 }
 
 def equipment = new Equipment({ println("Calculator 1") })
-def aCalculator = {println('Calculator 2')}
+def aCalculator = { println('Calculator 2') }
 def equipment1 = new Equipment(aCalculator)
 def equipment2 = new Equipment(aCalculator)
 
