@@ -11,8 +11,8 @@ process = "wc".execute()
 
 process.out.withWriter {
     it << "Let the world know...\n"
-    it << "Groovy rocks!"
+    it << "Groovy rocks!\n"
 }
 
 println(process.in.text)
-println process.text
+//        2       6      36 2行、6个单词、36个字符
