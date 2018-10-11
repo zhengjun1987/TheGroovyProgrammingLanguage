@@ -1,6 +1,6 @@
 package chapter02
 
-println "ls".execute().text
+//println "dir".execute().text
 //    zhengjuns-MacBook-Pro:chapter02 zhengjun$ groovy Execute
 //    usage: git [--version] [--help] [-C <path>] [-c name=value]
 //    [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
@@ -45,3 +45,11 @@ println "ls".execute().text
 //    concept guides. See 'git help <command>' or 'git help <concept>'
 //    to read about a specific subcommand or concept.
 //
+
+def execute = "git help".execute()
+println execute.class.name
+print execute.text
+
+
+//println "groovy -v".execute().text
+println "cmd /C dir".execute().text

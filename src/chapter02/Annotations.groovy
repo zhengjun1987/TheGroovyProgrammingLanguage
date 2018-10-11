@@ -125,6 +125,10 @@ class TheUnique {
     static def hello() {
         println("hello")
     }
+
+    def hi() {
+        println "Hey!"
+    }
 }
 
 println("Access TheUnique")
@@ -134,3 +138,6 @@ TheUnique.instance.hello()
 //        Instance created
 //        hello
 //        hello
+
+TheUnique.hello()
+TheUnique.instance.hi()
