@@ -16,7 +16,7 @@ enum Methodologies {
 
 for (item in Methodologies.values())
     item.iterationDetails()
-//        192:chapter02 zhengjun$ groovy AgileMethodologies.groovy
+//        192:chapter02 zhengjun$ groovy 09-03AgileMethodologies.groovy
 //        Evo recommand 5 days for iteration
 //        XP recommand 21 days for iteration
 //        Scrum recommand 30 days for iteration

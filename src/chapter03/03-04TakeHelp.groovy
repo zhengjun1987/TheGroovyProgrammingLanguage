@@ -1,7 +1,10 @@
 def takeHelp(helper){
-    helper.helpMoveThings();
-    if (helper.metaClass.respondsTo(helper,'eatSugarcane'))
-        helper.eatSugarcane()
+//    helper.helpMoveThings();
+    def strings = ['helpMoveThings','eatSugarcane']
+    for (string in strings){
+        if (helper.metaClass.respondsTo(helper, string))
+            helper."$string"()
+    }
 }
 
 class Man {
@@ -33,3 +36,10 @@ takeHelp(new Elephant())
 //        Woman.helpMoveThings
 //        Elephant.helpMoveThings
 //        Elephant.eatSugarcane
+class Car {
+    String eatSugarcane(){
+        println "Car.eatSugarcane"
+        3
+    }
+}
+takeHelp(new Car()) //Caught: groovy.lang.MissingMethodException: No signature of method: Car.helpMoveThings() is applicable for argument types: () values: []

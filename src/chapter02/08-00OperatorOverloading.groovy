@@ -4,7 +4,7 @@ for (ch in 'a'..'z') {
     print "$ch "
 }
 println ""
-//        192:chapter02 zhengjun$ groovy OperatorOverloading.groovy
+//        192:chapter02 zhengjun$ groovy 08-00OperatorOverloading.groovy
 //        a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 list = ['hello']

@@ -1,5 +1,7 @@
 package chapter04
 
+import java.text.SimpleDateFormat
+
 /**
  *   Author:Zheng Jun
  *   E-mail:zhengjun1987@outlook.com
@@ -19,7 +21,7 @@ tellFortune() {
 
 tellFortune() {
     date, fortune ->
-        println("Fortune for $date is $fortune")
+        println("Fortune for ${new SimpleDateFormat("yyyy-MM-dd").format(date)} is '$fortune'")
 }
 //        192:src zhengjun$ groovy chapter04/ClosureWithTwoParameters.groovy
 //        Fortune for Sun Jan 27 00:00:00 CST 2002 is Your day is filled with joy

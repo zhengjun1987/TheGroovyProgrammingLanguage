@@ -19,3 +19,7 @@ def totalSelectVal(n, clousure) {
 
 println("Sum of even numbers from 1 to 10 is ${totalSelectVal(10) { it % 2 == 0 }}")
 //        Sum of even numbers from 1 to 10 is 30
+println("Sum of 3 numbers from 1 to 10 is ${totalSelectVal(10) { it % 3 == 0 }}")
+//        Sum of even numbers from 1 to 10 is 18
+println("Sum of each numbers from 1 to 10 is ${totalSelectVal(10) { it }}")
+//        Sum of even numbers from 1 to 10 is 55

@@ -12,6 +12,10 @@ println "$last,$first $last"
 def name1 = 'Thomson'
 def name2 = 'Thompson'
 println "$name1 and $name2"
+
+/**
+ * Python里的元组与数组
+ */
 (name1, name2) = [name2, name1]
 println "$name1 and $name2"
 //        Thomson and Thompson

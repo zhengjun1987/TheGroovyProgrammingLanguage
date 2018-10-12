@@ -1,8 +1,9 @@
 def method() {
-    println "BlockInMethod.method"
-            {
-                println "it = $it"
-            }
+    println "BlockInMethod.method";
+//
+//    {
+//        println "it = $it";
+//    }
 }
 
 method()

@@ -21,7 +21,7 @@ def orderCoffe(size){
 orderCoffe(CoffeeSize.SMALL)
 orderCoffe(CoffeeSize.LARGE)
 orderCoffe(CoffeeSize.MUG)
-//        192:chapter02 zhengjun$ groovy CoffeSizeTest.groovy
+//        192:chapter02 zhengjun$ groovy 09-03CoffeSizeTest.groovy
 //        Coffee order received for size SMALL ：You are health conscious!
 //        Coffee order received for size LARGE ：You gotta be a programmer!
 //        Coffee order received for size MUG ：You should try caffeine IV!

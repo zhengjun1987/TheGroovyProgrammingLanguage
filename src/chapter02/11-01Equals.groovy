@@ -1,3 +1,8 @@
+/**
+ * 当类实现了Comparable接口，“==”操作符被重载到compareTo方法
+ * is()相当于原来Java里面的==
+ */
+
 str1 = 'Hello'
 str2 = str1
 str3 = new String("Hello")

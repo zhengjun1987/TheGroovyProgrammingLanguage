@@ -9,3 +9,12 @@ for (it in integers)
 //        List populated:
 //        1 2.0 a Hello
 //        Process finished with exit code 0
+
+println "\b"
+
+integers = []
+integers << 1
+integers << 2.0
+integers << 'a'
+integers << 'Hello'
+println integers

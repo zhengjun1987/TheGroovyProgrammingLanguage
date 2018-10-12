@@ -6,7 +6,7 @@ import groovy.transform.TypeChecked
  * Date: 2018/4/26 10:32
  */
 
-@TypeChecked
+//@TypeChecked
 def shout(String str){
     println "Printing in uppercase:"
     println str.toUpperCase()
@@ -18,8 +18,8 @@ def shout(String str){
 try {
     shout('hello')
 } catch (e) {
+    e.printStackTrace()
     println 'Failed...'
-//    e.printStackTrace()
 }
 //        Printing in uppercase:
 //        HELLO
