@@ -38,8 +38,8 @@ takeHelp(new Elephant())
 //        Elephant.eatSugarcane
 class Car {
     String eatSugarcane(){
-        println "Car.eatSugarcane"
+        println "Car1.eatSugarcane"
         3
     }
 }
-takeHelp(new Car()) //Caught: groovy.lang.MissingMethodException: No signature of method: Car.helpMoveThings() is applicable for argument types: () values: []
+takeHelp(new Car1()) //Caught: groovy.lang.MissingMethodException: No signature of method: Car1.helpMoveThings() is applicable for argument types: () values: []

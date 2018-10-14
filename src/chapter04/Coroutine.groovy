@@ -11,13 +11,13 @@ def iterate(n,closure){
     }
 }
 
-println("Calling iterate")
+println "Calling iterate"
 total = 0
-iterate(4) {
+iterate(10) {
     total += it
-    println("adding to $total")
+    println "adding to $total"
 }
-println('Done!')
+println 'Done!'
 //        Calling iterate
 //        In iterate with value 1
 //        adding to 1

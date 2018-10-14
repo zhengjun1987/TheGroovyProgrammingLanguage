@@ -23,8 +23,8 @@ println ""
 
 /*GDK对Java类的再封装*/
 print "git --version".execute().text
-print "git --version".execute().class.name
-print "cmd /C dir".execute().text
+println "git --version".execute().class.name
+print "ls".execute().text
 
 /*安全导航操作符*/
 
@@ -52,19 +52,19 @@ try {
 println Integer.metaClass.percentRaise
 println "======================"
 
-class Car {
+class Car1 {
     def miles = 0
     final year
 
-    Car(year) {
+    Car1(year) {
         this.year = year
     }
 }
 
-Car.class.metaClass.incrementMiles = { milesAdded -> delegate?.miles += milesAdded }
-def car2005 = new Car(2005)
+Car1.class.metaClass.incrementMiles = { milesAdded -> delegate?.miles += milesAdded }
+def car2005 = new Car1(2005)
 
-def car = new Car(2008)
+def car = new Car1(2008)
 println car.year
 println car.getMiles()
 
@@ -72,8 +72,10 @@ car.incrementMiles(500)
 println car.miles
 car2005.incrementMiles(600)
 println "car2005.miles = $car2005.miles"
-Car car1
+Car1 car1
 println car1?.incrementMiles(400)
+
+//car2005.year = 2001
 
 File.metaClass.readLine = {
     def scanner = new Scanner(new FileInputStream(delegate))
@@ -84,3 +86,16 @@ File.metaClass.readLine = {
 
 def file = new File("summary.groovy")
 println file.readLine()
+
+class Robot {
+    def type, height, width
+
+    def access(location, weight, fragile) {
+        println "Received fragile? $fragile, weight:$weight, location:$location"
+    }
+}
+
+def robot = new Robot(type: 'arm', width: 10, height: 40)
+println "$robot.type, $robot.height, $robot.width"
+robot.access(50, true, x: 30, y: 20, z: 10)
+robot.access(x: 30, y: 20, z: 10, 50, true)

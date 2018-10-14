@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * Date:2018/4/14 19:33
  * Project:TheGroovyProgrammingLanguage
  */
-public class ExecuteProcess {
+class ExecuteProcess {
     public static void main(String[] args) {
         try {
             Process vProcess = Runtime.getRuntime().exec("git help");

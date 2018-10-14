@@ -6,7 +6,7 @@ package chapter02;
  * Date:2018/4/14 19:00
  * Project:TheGroovyProgrammingLanguage
  */
-public class Greetings {
+class Greetings {
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
             System.out.print("ho ");

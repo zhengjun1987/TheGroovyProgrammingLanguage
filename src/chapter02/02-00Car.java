@@ -6,7 +6,7 @@ package chapter02;
  * Date:2018/4/18 21:10
  * Project:TheGroovyProgrammingLanguage
  */
-public class Car {
+class Car {
     private int miles;
     private final int year;
 
