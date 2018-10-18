@@ -11,7 +11,7 @@ value = 12
 println("He paid \$$value for that.")    //$在此处并需要转义字符\
 //        He paid $12 for that.
 
-println(/He paid $$value for that./)    //$在此处并不需要转义字符\
+println(/He paid $$value for that./)    //$在此处并不需要转义字符\，但是不能没有圆括号
 //        He paid $12 for that.
 
 what = new StringBuilder('fence')

@@ -13,7 +13,7 @@ def examinateClosure(closure) {
 
 println "this = $this"
 
-examinateClosure({
+examinateClosure {
     println "outer it = $it"
     println("In first closure：")
     println("class is ${getClass().name}")    //QueryingClosure$_run_closure1
@@ -26,7 +26,7 @@ examinateClosure({
 
     println("========================================================")
 
-    examinateClosure({
+    closure1 = {
         println "inner it = $it"
         println("In closure within the first closure：")
         println("class is ${getClass().name}")
@@ -37,8 +37,10 @@ examinateClosure({
         println "{owner.getClass().superclass.name} = ${owner.getClass().superclass.name}"
         println "delegate = " + delegate.toString()
         println "{delegate.class.superclass.name} = ${delegate.class.superclass.name}"
-    })
-})
+    }
+
+    examinateClosure closure1
+}
 //        outer it = null
 //        In first closure：
 //        class is chapter04.ThisOwnerDelegate$_run_closure1

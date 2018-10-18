@@ -5,10 +5,14 @@
  */
 
 def factorial
+factorial = {
+    int number, BigInteger bigInteger ->
+        number == 1 ? bigInteger : factorial.trampoline(number - 1, number * bigInteger)
 
-factorial = { int number, BigInteger bigInteger -> number == 1 ? bigInteger : factorial.trampoline(number - 1, number * bigInteger) }.trampoline()
+}
 
 println "{factorial(5,1)} = ${factorial(5, 1)}"
+println "factorial(100,1) = ${factorial(100,1)}"
 
 //println "{factorial(5000,1).bitCount()} = ${factorial(5000, 1).bitCount()}"
 //        {factorial(5,1)} = 120

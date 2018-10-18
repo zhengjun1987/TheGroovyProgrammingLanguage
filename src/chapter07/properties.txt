@@ -1,0 +1,4 @@
+#build config amendment 2018-10-18 18:22:57
+#Thu Oct 18 18:45:14 CST 2018
+version=1.3.0
+deviceType=BREAK_YF

@@ -28,3 +28,4 @@ integers.with {
 //        this = chapter07.Identity@147a5d08
 //        owner = chapter07.Identity@147a5d08
 //        delegate = [1, 2, 3, 4, 5, 6]
+

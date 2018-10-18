@@ -5,12 +5,13 @@ package chapter04
  * Date: 2018/4/27 14:46
  */
 
-def completeOrder(amount, taxComputer) {
+def completeOrder(amount, Closure taxComputer) {
     tax = 0
+    println "taxComputer = $taxComputer"
     if (taxComputer.maximumNumberOfParameters == 2) {
         tax = taxComputer(amount, 6.05)
     } else {
-        tax = taxComputer amount
+        tax = taxComputer.call(amount)
     }
     println("Sales tax is $tax")
 }

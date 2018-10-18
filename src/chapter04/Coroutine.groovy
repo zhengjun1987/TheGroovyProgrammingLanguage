@@ -6,7 +6,7 @@
 
 def iterate(n,closure){
     1.upto(n){
-        println("In iterate with value $it")
+        println("=======================$it=======================")
         closure it
     }
 }
