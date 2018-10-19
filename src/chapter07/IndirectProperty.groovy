@@ -26,3 +26,7 @@ println "fuelLevel now is ${car['fuelLevel']}"
 //        fuelLevel now is 100
 
 println "fuelLevel now is ${car.fuelLevel}"
+
+
+println car['miles']
+println car['fuelLevel']

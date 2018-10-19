@@ -1,7 +1,6 @@
 package chapter05
 
 import java.util.regex.Matcher
-import java.util.regex.Pattern
 
 /**
  *   Author:Zheng Jun
@@ -31,7 +30,7 @@ else
 //        NO
 
 
-Matcher matcher = 'Groovy is groovy' =~ pattern
+Matcher matcher = 'Groovy is groovy' =~ /(G|g)roovy/
 println "matcher.matches() = ${ -> matcher.matches()}"
 println "{matcher.size()} = ${matcher.size()}"
 println "{matcher[0]} = ${matcher[0]}"
